@@ -1,0 +1,27 @@
+﻿<Window x:Class="Tracert可视化工具.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tracert可视化工具"
+        mc:Ignorable="d"
+        Title="Tracert可视化工具     IP地理信息来自淘宝,准确性未知." Height="500" Width="800"
+        Background="AliceBlue"
+        Closing="Window_Closing">
+    <Grid>
+        <TextBox x:Name="textBox_Ips" Height="23" Margin="81,7,0,0" TextWrapping="Wrap" Text="www.baidu.com" VerticalAlignment="Top" HorizontalAlignment="Left" Width="242"/>
+        <Button x:Name="button_Start" Content="开始" IsDefault="True" HorizontalAlignment="Left" Margin="335,7,0,0" VerticalAlignment="Top" Width="75" Click="button_Start_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="IP或者域名" VerticalAlignment="Top"/>
+        <Grid Margin="10,35,10,10">
+            <GroupBox x:Name="groupBox" Header="Tracert原始数据" HorizontalAlignment="Left" Width="400">
+                <TextBox x:Name="textBox_Tracert" IsReadOnly="True" Margin="5" TextWrapping="Wrap"/>
+            </GroupBox>
+            <GroupBox x:Name="groupBox1" Header="对应IP地理位置" Margin="405,0,0,0">
+                <TextBox x:Name="textBox_IpAddr" IsReadOnly="True" Margin="5" TextWrapping="Wrap"/>
+            </GroupBox>
+
+        </Grid>
+        <CheckBox x:Name="checkBox" Content="清空上一次的数据" HorizontalAlignment="Left" Margin="433,10,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
