@@ -48,9 +48,11 @@ namespace Tracert可视化工具.Tracert
                 ProcessStartInfo info = m_cTracertProcess.StartInfo;
                 //启动的进程名字
                 info.FileName = "tracert";
+
                 //启动参数
-                Action action1 = () =>{ info.Arguments = " -d " + win.textBox_Ips.Text; };
-                win.textBox_Ips.Dispatcher.Invoke(action1);
+                Action acAddr2Ip = () => { info.Arguments = " " + (win.checkBoxA2I.IsChecked == true ? "-d " : "") + win.textBox_Ips.Text; };
+                win.textBox_Ips.Dispatcher.Invoke(acAddr2Ip);
+
                 //MessageBox.Show(info.Arguments);
                 //不显示窗口
                 info.CreateNoWindow = true;
