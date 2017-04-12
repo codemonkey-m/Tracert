@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tracert可视化工具"
         mc:Ignorable="d"
-        Title="Tracert可视化工具     IP地理信息来自淘宝,准确性未知.速度很慢!!!" Height="500" Width="800"
+        Title="Tracert可视化工具     IP地理信息来自淘宝,准确性未知.速度很慢!!!    IPV6...不知道怎么查询...所以也没加..." Height="500" Width="800"
         Background="AliceBlue"
         Closing="Window_Closing">
     <Grid>

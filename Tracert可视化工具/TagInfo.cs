@@ -32,7 +32,7 @@ namespace Tracert可视化工具
         }
         public static string GetStrIp(string strValue)
         {
-            Match m = Regex.Match(strValue, @"\d+.\d+.\d+.\d+");
+            Match m = Regex.Match(strValue, @"\d+\.\d+\.\d+\.\d+");
             return m.Value;
         }
     }
